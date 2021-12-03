@@ -8,7 +8,6 @@ const filterMoviesLanguage = (unFilteredMovies, languages) => {
       .forEach(
         (lang) => (flag = lang === movie.EventLanguage || flag ? true : false)
       );
-    if (flag) console.log(movie.EventTitle);
 
     return flag;
   });
@@ -16,4 +15,23 @@ const filterMoviesLanguage = (unFilteredMovies, languages) => {
   return filteredMovies;
 };
 
-export { filterMoviesLanguage };
+const filterMoviesGenre = (languageFilteredMovies, genres) => {
+  if (genres.length === 0) return languageFilteredMovies;
+
+  const filteredMovies = languageFilteredMovies.filter((movie) => {
+    let flag = false;
+    let movieGenres = movie.EventGenre.split("|");
+    let genresArray = genres.split(" ");
+    console.log(movieGenres, genresArray);
+    console.log();
+    movieGenres.forEach((genre) =>
+      genresArray.forEach((g) => (flag = g === genre || flag ? true : false))
+    );
+
+    return flag;
+  });
+
+  return filteredMovies;
+};
+
+export { filterMoviesLanguage, filterMoviesGenre };

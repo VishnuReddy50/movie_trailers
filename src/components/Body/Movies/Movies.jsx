@@ -1,6 +1,9 @@
 import ReactDOM, { useEffect, useState } from "react";
 import { getMovies } from "../../../helpers/api";
-import { filterMoviesLanguage } from "../../../helpers/filter";
+import {
+  filterMoviesGenre,
+  filterMoviesLanguage
+} from "../../../helpers/filter";
 import MovieCard from "../MovieCard/MovieCard";
 const Movies = ({ languages, genres }) => {
   const [movies, setMovies] = useState([]);
@@ -14,7 +17,17 @@ const Movies = ({ languages, genres }) => {
   const filter = async (languages, genres) => {
     console.log(languages);
     const unFilteredMovies = await fetchAllMovies();
-    setMovies(filterMoviesLanguage(unFilteredMovies, languages));
+    const languageFilteredMovies = filterMoviesLanguage(
+      unFilteredMovies,
+      languages
+    );
+    const genreFilteredMovies = filterMoviesGenre(
+      languageFilteredMovies,
+      genres
+    );
+
+    console.log(genreFilteredMovies);
+    setMovies(genreFilteredMovies);
   };
 
   useEffect(() => {

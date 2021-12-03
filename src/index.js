@@ -6,7 +6,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <Header />
-    <Movies languages="Telugu Hindi" genres="" />
+    <Movies languages="" genres="Romance Comedy" />
   </StrictMode>,
   rootElement
 );
