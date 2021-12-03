@@ -1,10 +1,10 @@
 import ReactDOM, { useEffect, useState } from "react";
 import { getMovies } from "../../../helpers/api";
+import MovieCard from "../../../UiComponents/MovieCard/MovieCard";
 import {
   filterMoviesGenre,
   filterMoviesLanguage
 } from "../../../helpers/filter";
-import MovieCard from "../MovieCard/MovieCard";
 const Movies = ({ languages, genres }) => {
   const [movies, setMovies] = useState([]);
 
@@ -37,12 +37,7 @@ const Movies = ({ languages, genres }) => {
   return (
     <div>
       {movies.map((movie, index) => (
-        <MovieCard
-          name={movie.EventTitle}
-          imageURL={movie.EventImageUrl}
-          rating={movie.EventGenre}
-          key={index}
-        />
+        <MovieCard movie={movie} />
       ))}
     </div>
   );
