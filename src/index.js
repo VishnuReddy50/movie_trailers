@@ -6,7 +6,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <Header />
-    <Movies />
+    <Movies languages="" genres="" />
   </StrictMode>,
   rootElement
 );

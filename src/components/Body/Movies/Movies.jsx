@@ -1,25 +1,33 @@
 import ReactDOM, { useEffect, useState } from "react";
 import { getMovies } from "../../../helpers/api";
 import MovieCard from "../MovieCard/MovieCard";
-const Movies = () => {
+const Movies = ({ languages, genres }) => {
   const [movies, setMovies] = useState([]);
 
-  const fetchMovies = async () => {
+  const fetchAllMovies = async () => {
     const fetchedMoviesObject = await getMovies();
     const fetchedMoviesArray = await Object.values(fetchedMoviesObject);
-    setMovies(fetchedMoviesArray);
+    return await fetchedMoviesArray;
   };
+
+  const filter = async (languages, genres) => {
+    const unFilteredMovies = await fetchAllMovies();
+    console.log(unFilteredMovies);
+    setMovies(unFilteredMovies);
+  };
+
   useEffect(() => {
-    fetchMovies();
-  }, []);
+    filter();
+  }, [languages, genres]);
 
   return (
     <div>
-      {movies.map((movie) => (
+      {movies.map((movie, index) => (
         <MovieCard
           name={movie.EventTitle}
           imageURL={movie.EventImageUrl}
           rating={movie.EventGenre}
+          key={index}
         />
       ))}
     </div>
