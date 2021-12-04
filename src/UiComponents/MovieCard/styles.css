@@ -4,6 +4,8 @@
   width: 200px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+  margin-right: 0;
+  align-items: center;
 }
 
 .cardImage {
@@ -17,7 +19,7 @@
 .ratingDiv {
   display: flex;
   flex-direction: row;
-  margin-top: 179px;
+  margin-top: 178px;
   color: white;
   position: absolute;
   width: 180px;
@@ -69,7 +71,7 @@
 .playButton {
   position: absolute;
   margin-top: 90px;
-  margin-left: 65px;
+  /* margin-left: 0x; */
 }
 .playButton img:hover {
   transform: scale(1.25);

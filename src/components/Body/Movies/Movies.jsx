@@ -1,11 +1,12 @@
-import ReactDOM, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import "./styles.css";
 import { getMovies } from "../../../helpers/api";
 import MovieCard from "../../../UiComponents/MovieCard/MovieCard";
-import "./styles.css";
 import {
   filterMoviesGenre,
   filterMoviesLanguage
 } from "../../../helpers/filter";
+
 const Movies = ({ languages, genres }) => {
   const [movies, setMovies] = useState([]);
 
