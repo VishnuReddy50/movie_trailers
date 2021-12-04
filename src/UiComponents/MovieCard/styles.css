@@ -3,19 +3,24 @@
   flex-direction: column;
   width: 200px;
   font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
 .cardImage {
-  width: 200px;
+  width: 180px;
+  height: 250px;
+  background: url("https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-wanted-9d-et00065270-15-11-2017-06-49-54.jpg")
+    no-repeat;
+  background-size: 180px 250px;
 }
 
 .ratingDiv {
   display: flex;
   flex-direction: row;
-  margin-top: 200px;
+  margin-top: 179px;
   color: white;
   position: absolute;
-  width: 200px;
+  width: 180px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
 }
 
@@ -24,7 +29,7 @@
 }
 
 .rating {
-  padding-left: 120px;
+  padding-left: 100px;
 }
 
 .rating p:nth-child(1) {
@@ -45,7 +50,7 @@
 
 .dateDiv {
   position: absolute;
-  margin-left: 143px;
+  margin-left: 120px;
   margin-top: 7px;
 }
 
@@ -61,7 +66,21 @@
   color: #ffffff;
 }
 
+.playButton {
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 65px;
+}
+.playButton img:hover {
+  transform: scale(1.25);
+}
+.playButton img {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
 .cardTitle {
   font-weight: 200;
-  font-size: 15px;
+  font-size: 13px;
 }

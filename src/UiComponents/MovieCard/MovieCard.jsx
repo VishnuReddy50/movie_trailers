@@ -1,3 +1,5 @@
+import heart from "../../Icons/heart.png";
+import playButton from "../../Icons/playButton.png";
 import "./styles.css";
 
 const MovieCard = ({ movie }) => {
@@ -7,14 +9,18 @@ const MovieCard = ({ movie }) => {
     <div className="movieCard">
       <img
         src={movie.EventImageUrl}
-        alt="Movie Thumbnail"
+        alt=""
         className="cardImage"
+        loading="lazy"
       />
+       <div className="playButton">
+        <img src={playButton} alt="playButton"/>
+        </div>
       <div className="ratingDiv">
         <div className="rating">
           <p>
             <img
-              src="https://cdn-icons.flaticon.com/png/512/2589/premium/2589175.png?token=exp=1638546472~hmac=3f3882bb9ef740b5844cb1cbd8475d67"
+              src={heart}
               alt="likeCount"
             />
             {movie.wtsPerc}%
@@ -22,6 +28,7 @@ const MovieCard = ({ movie }) => {
           <p>{movie.wtsCount} votes</p>
         </div>
       </div>
+     
       <div className="dateDiv">
         <div className="date">
           <p style={{marginBottom:"0"}}>{date[0].split(" ").[1]}</p>

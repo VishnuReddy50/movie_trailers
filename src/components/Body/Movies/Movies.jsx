@@ -1,6 +1,7 @@
 import ReactDOM, { useEffect, useState } from "react";
 import { getMovies } from "../../../helpers/api";
 import MovieCard from "../../../UiComponents/MovieCard/MovieCard";
+import "./styles.css";
 import {
   filterMoviesGenre,
   filterMoviesLanguage
@@ -35,7 +36,7 @@ const Movies = ({ languages, genres }) => {
   }, [languages, genres]);
 
   return (
-    <div>
+    <div className="Movies">
       {movies.map((movie, index) => (
         <MovieCard movie={movie} />
       ))}
