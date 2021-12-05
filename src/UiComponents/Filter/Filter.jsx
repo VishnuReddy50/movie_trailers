@@ -6,7 +6,7 @@ const Filter = ({ name, list, store, handleRemove, handleAdd }) => {
 
   return (
     <div>
-      <div className="Filters=">
+      <div className="Filter">
         <button type="button" onClick={() => setOpen(!open)}>
           {name} {open ? "▲" : "▼"}
         </button>

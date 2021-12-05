@@ -1,14 +1,29 @@
 .Filter {
   background-color: #141414;
   z-index: 100;
-  /* width:  */
+  width: 120px;
+  margin: 20px;
+  padding-right: 20px;
+  position: relative;
 }
+
+.Filter button {
+  font-size: 16px;
+  width: 120px;
+  background-color: #6d6875;
+  color: #ffffff;
+  padding: 8px;
+  border: 2px solid #4d908e;
+  border-radius: 10px;
+}
+
 .openClass {
   display: flex;
   flex-direction: column;
 }
 
 .dropdown {
+  position: absolute;
   z-index: 100;
   background-color: #141414;
 }
@@ -20,5 +35,11 @@
 .items {
   text-align: left;
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 14px;
+  padding-left: 10px;
+  width: 140px;
+}
+
+.items label {
+  padding-left: 8px;
 }
