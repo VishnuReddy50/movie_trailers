@@ -33,11 +33,13 @@
 }
 
 .trailerClose h2 {
-  padding: 15px;
+  padding: 5px 10px;
   margin-top: 0;
   background-color: #e63946;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 25px;
+  font-size: 20px;
 }
 
 .movieDetails h3 {
@@ -133,6 +135,11 @@
 .movieDetails .icons img {
   width: 2vw;
   margin-bottom: 2vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.movieDetails .icons img:hover {
+  transform: scale(1.5);
 }
 
 .iconContent {

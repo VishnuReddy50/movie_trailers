@@ -1,9 +1,11 @@
-import ReactDOM from "react";
+import Checkbox from "../../UiComponents/checkbox/checkbox";
+import "./styles.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="Header">
       <h1>Header</h1>
+      <Checkbox />
     </div>
   );
 };

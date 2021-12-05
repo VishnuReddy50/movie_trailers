@@ -7,7 +7,7 @@ import {
   filterMoviesLanguage
 } from "../../../helpers/filter";
 
-const Movies = ({ languages, genres }) => {
+const Movies = ({ langFilters, genFilters, filters }) => {
   const [movies, setMovies] = useState([]);
 
   const fetchAllMovies = async () => {
@@ -16,25 +16,24 @@ const Movies = ({ languages, genres }) => {
     return await fetchedMoviesArray;
   };
 
-  const filter = async (languages, genres) => {
-    console.log(languages);
+  const filter = async () => {
     const unFilteredMovies = await fetchAllMovies();
+
     const languageFilteredMovies = filterMoviesLanguage(
-      unFilteredMovies,
-      languages
+      langFilters,
+      unFilteredMovies
     );
     const genreFilteredMovies = filterMoviesGenre(
-      languageFilteredMovies,
-      genres
+      genFilters,
+      languageFilteredMovies
     );
 
-    console.log(genreFilteredMovies);
     setMovies(genreFilteredMovies);
   };
 
   useEffect(() => {
-    filter(languages, genres);
-  }, [languages, genres]);
+    filter();
+  }, [langFilters, genFilters, filters]);
 
   return (
     <div className="Movies">

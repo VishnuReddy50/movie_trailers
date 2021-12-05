@@ -6,6 +6,8 @@
   color: #ffffff;
   margin-right: 0;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .cardImage {
@@ -14,6 +16,15 @@
   background: url("https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-wanted-9d-et00065270-15-11-2017-06-49-54.jpg")
     no-repeat;
   background-size: 180px 250px;
+}
+
+.cardImage2 {
+  width: 180px;
+  height: 250px;
+  background: url("https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-wanted-9d-et00065270-15-11-2017-06-49-54.jpg")
+    no-repeat;
+  background-size: 180px 250px;
+  border: 4px solid #6a994e;
 }
 
 .ratingDiv {

@@ -11,6 +11,7 @@ const MovieCard = ({ movie }) => {
 
   const handleTrailer = () =>{
     setTrailer(!trailer);    
+    setStyle(style === "cardImage" ? "cardImage2" :"cardImage");
   }
 
   return (
@@ -23,6 +24,8 @@ const MovieCard = ({ movie }) => {
         alt=""
         className={style}
         loading="lazy"
+        width="180"
+        height="250"
       />
       <div className="playButton" onClick={handleTrailer}>
         <img src={playButton} alt="playButton"/>
