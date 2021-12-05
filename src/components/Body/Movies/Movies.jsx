@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import "./styles.css";
 import { getMovies } from "../../../helpers/api";
 import MovieCard from "../../../UiComponents/MovieCard/MovieCard";
 import {
   filterMoviesGenre,
   filterMoviesLanguage
 } from "../../../helpers/filter";
+import "./Movies.css";
 
 const Movies = ({ langFilters, genFilters, filters }) => {
   const [movies, setMovies] = useState([]);

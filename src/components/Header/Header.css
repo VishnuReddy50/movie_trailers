@@ -1,0 +1,13 @@
+.Header {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FilterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

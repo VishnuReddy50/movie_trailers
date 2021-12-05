@@ -33,6 +33,7 @@
   margin-top: 178px;
   color: white;
   position: absolute;
+  z-index: 3;
   width: 180px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
 }
@@ -63,6 +64,7 @@
 
 .dateDiv {
   position: absolute;
+  z-index: 3;
   margin-left: 120px;
   margin-top: 7px;
 }
@@ -82,6 +84,7 @@
 .playButton {
   position: absolute;
   margin-top: 90px;
+  z-index: 3;
   /* margin-left: 0x; */
 }
 .playButton img:hover {

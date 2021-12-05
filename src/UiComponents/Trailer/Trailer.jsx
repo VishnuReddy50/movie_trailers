@@ -1,9 +1,9 @@
-import "./styles.css";
-import like from "../Icons/like.png";
-import heart from "../Icons/heart.png";
-import dislike from "../Icons/dislike.png";
-import question from "../Icons/question.png";
-import calendar from "../Icons/calendar.png";
+import "./Trailer.css";
+import like from "../../Assets/Icons/like.png";
+import heart from "../../Assets/Icons/heart.png";
+import dislike from "../../Assets/Icons/dislike.png";
+import question from "../../Assets/Icons/question.png";
+import calendar from "../../Assets/Icons/calendar.png";
 
 const Trailer = ({ movie, handleTrailer }) => {
   const url_string = `${movie.TrailerURL}`;

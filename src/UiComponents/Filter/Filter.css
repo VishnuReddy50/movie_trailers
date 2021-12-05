@@ -1,0 +1,24 @@
+.Filter {
+  background-color: #141414;
+  z-index: 100;
+  /* width:  */
+}
+.openClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  z-index: 100;
+  background-color: #141414;
+}
+
+.closeClass {
+  display: none;
+}
+
+.items {
+  text-align: left;
+  margin-top: 5px;
+  font-size: 13px;
+}

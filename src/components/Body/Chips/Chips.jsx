@@ -1,7 +1,8 @@
 import { React } from "react";
-import "./styles.css";
+import "./Chips.css";
 
 export default function Chips({ langFilters, genFilters, handleRemove }) {
+  console.log(langFilters);
   return (
     <div className="Chips">
       Applied Filters :

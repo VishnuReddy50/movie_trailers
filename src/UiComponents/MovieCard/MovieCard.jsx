@@ -1,8 +1,8 @@
 import { useState } from "react";
-import heart from "../Icons/heart.png";
-import playButton from "../Icons/playButton.png";
+import heart from "../../Assets/Icons/heart.png";
+import playButton from "../../Assets/Icons/playButton.png";
 import Trailer from "../Trailer/Trailer";
-import "./styles.css";
+import "./MovieCard.css";
 
 const MovieCard = ({ movie }) => {
   const date = movie.ShowDate.split(",");
