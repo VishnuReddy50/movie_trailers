@@ -1,3 +1,4 @@
+// Complete languages list to import for the later use
 const lFilters = [
   "Hindi",
   "English",

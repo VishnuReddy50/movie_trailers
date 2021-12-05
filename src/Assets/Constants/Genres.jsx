@@ -1,3 +1,4 @@
+// Complete genres list to import for the later use
 const gFilters = [
   "Action",
   "Adventure",

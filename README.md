@@ -1,6 +1,6 @@
 # Movie Trailers
 
-## _Filter , Find and Watch Movie Trailers_
+## _Filter, Find and Watch Movie Trailers_
 
 Movie Trailers react app allows users to browse and watch movie trailers. Filter by language and Genre.
 
@@ -10,34 +10,34 @@ Movie Trailers react app allows users to browse and watch movie trailers. Filter
 - Click on any movie to view its detail and watch the trailer.
 - Use the filters to filter relavant results based on Genre and Language.
 
-## Sandbox and Github Links
+## Sandbox and GitHub Links
 
 You can checkout Movie Trailers application and view it Sandbox :
-[Demo Link]
+[SandBox Link](https://codesandbox.io/s/cold-water-iogxu?file=/README.md)
 
 You can contribute and clone the repository from :
-[Github Link]
+[GitHub Link](https://github.com/VishnuReddy50/movie_trailers)
 
 ## Tech
 
-- [ReactJS] - Front end library!
+- [ReactJS] - Front Framework!
 
 ## Installation
 
-- This repo is currently hosted on [Github Link].
+- This repo is currently hosted on [GitHub](https://github.com/VishnuReddy50/movie_trailers.)
 - Code can be pushed to the feature branch.
 - You can start working on the repo by cloning it!
 
 To clone in cli :
 
 ```sh
-git clone <url of reo>
+git clone https://github.com/VishnuReddy50/movie_trailers.git
 ```
 
 To install all Dependencies:
 
 ```sh
-cd Movie_Trailers
+cd movie_trailers
 npm install
 ```
 
@@ -46,7 +46,7 @@ npm install
 To initialize the application
 
 ```sh
-cd Movie_Trailers
+cd movie_trailers
 npm start
 ```
 
@@ -57,7 +57,7 @@ You can now start viewing the application on port - localhost:3000
 To build the application
 
 ```sh
-cd Movie_Trailers
+cd movie_trailers
 npm run build
 ```
 
@@ -78,7 +78,7 @@ I have attempted to seperate the components into two parts :
 | Component   | Purpose                                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------------------------- |
 | Header      | Header component utilises the Filters component to allow the user to add filters to the movies at one single place. |
-| Body->Chips | Proviedes a beautiful chips type interface to remove filters                                                        |
+| Body->Chips | Provides a beautiful chips type interface to remove filters                                                         |
 | Movies      | This is the place where all the movie cards are arranged and also interacts with the api to fetch and show movies.  |
 
 ## APIs and Controllers

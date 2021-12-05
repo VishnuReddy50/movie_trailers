@@ -26,6 +26,9 @@
   position: absolute;
   z-index: 100;
   background-color: #141414;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
 }
 
 .closeClass {
