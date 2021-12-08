@@ -20,7 +20,7 @@ You can contribute and clone the repository from :
 
 ## Tech
 
-- [ReactJS] - Front Framework!
+- [ReactJS] - Frontend Library!
 
 ## Installation
 
